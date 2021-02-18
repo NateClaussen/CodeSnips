@@ -56,11 +56,12 @@ namespace CookBookFinal.Controllers
             var user = await userManager.GetUserAsync(User);
             var newRecipe = recipeManager.Create(user);
 
-            //Mock Data
+            //Mock Data (comment out if you don't want testing ingredients)
+            ///*
             recipeManager.AddIngredient(newRecipe.Id, new Ingredient { Name = "Alfredo Noodles", Quantity = "One Bag", Description = "Make sure they are the long and thick noodles" });
             recipeManager.AddIngredient(newRecipe.Id, new Ingredient { Name = "chicken", Quantity = "One Full Chicken Breast", Description = "However you like them :)" });
             recipeManager.AddIngredient(newRecipe.Id, new Ingredient { Name = "Alfredo Sauce", Quantity = "One can", Description = "They are <this> brand of sauce" });
-            recipeManager.AddIngredient(newRecipe.Id, new Ingredient { Name = "Garlic", Quantity = "Small Pinch", Description = "For extra Taste" });
+            recipeManager.AddIngredient(newRecipe.Id, new Ingredient { Name = "Garlic", Quantity = "Small Pinch", Description = "For extra Taste" });//*/
             
 
 
