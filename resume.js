@@ -10,9 +10,7 @@ function toggleSlide(selectedCard) {
 
 }
 
-function toggleAllSlides() {
-    //This is a comment to see if my snippet actually changes and updates! :O
-}
+function toggleAllSlides() {}
 
 $(document).ready(function() {
     toggleAllSlides();
